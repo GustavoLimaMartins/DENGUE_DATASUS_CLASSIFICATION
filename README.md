@@ -20,6 +20,10 @@ Este projeto implementa uma arquitetura **end-to-end** para análise e prediçã
 
 ## 🏗️ Arquitetura do Pipeline
 
+⚠️ Por restrições de privacidade e tamanho, o dataset original está comprimido neste repositório.
+Um arquivo compactado contendo o dataset normalizado `.parquet_normalizado.zip` é disponibilizado separadamente.
+Antes de executar o modelo localmente via clone, é necessário descompactar o arquivo de dados na pasta `files/`
+
 ### 1️⃣ Extração dos Dados `.dbf` do DATASUS/SINAN
 
 - **Arquivo:** `data_extract/a_extract_files_dbf.py`
