@@ -1,0 +1,14 @@
+Melhor N-Value: 8
+Menor erro encontrado: 0.5524615384615384
+
+📋 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0     0.0030    0.0682    0.0058        44
+           1     0.6606    0.3527    0.4598      4293
+           2     0.2890    0.3629    0.3218      1882
+           3     0.0551    0.1673    0.0829       281
+
+    accuracy                         0.3457      6500
+   macro avg     0.2519    0.2378    0.2176      6500
+weighted avg     0.5224    0.3457    0.4005      6500

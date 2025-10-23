@@ -1,0 +1,13 @@
+Melhores parâmetros: {'class_weight': {0: 1, 1: 3, 2: 3, 3: 5}, 'criterion': 'entropy', 'max_depth': 85, 'min_samples_split': 4, 'n_estimators': 253}
+
+📋 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0     0.4677    0.1503    0.2275       193
+           1     0.8094    0.8095    0.8095     23875
+           2     0.5850    0.5958    0.5904     10809
+           3     0.5966    0.5680    0.5819      1479
+
+    accuracy                         0.7327     36356
+   macro avg     0.6147    0.5309    0.5523     36356
+weighted avg     0.7323    0.7327    0.7320     36356

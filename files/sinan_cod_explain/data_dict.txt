@@ -1,0 +1,44 @@
+============================================================
+DICIONÁRIO DE DADOS - PÓS-TRATAMENTO (SINAN CONSOLIDADO)
+============================================================
+
+NOME DA COLUNA | TIPO FINAL | DESCRIÇÃO | VALORES / CÓDIGOS (NOVA CODIFICAÇÃO)
+--------------------------------------------------------------------------------------
+IDADE_ANOS     | Float64    | Idade calculada em anos (decimal). | Valor contínuo em anos
+FAIXA_ETARIA   | Int64      | Faixa etária consolidada. | 1: <1 ano, 2: 1-4 anos, 3: 5-9 anos, ..., 11: 80+ anos
+--------------------------------------------------------------------------------------
+MES_INVEST     | UInt8      | Mês da Data de Investigação. | 1-12
+MES_ENCERRA    | UInt8      | Mês da Data de Encerramento. | 1-12
+SEMANA_ISO_INVEST | UInt8   | Semana ISO do Ano da Investigação. | 1-53
+SEMANA_ISO_ENCERRA| UInt8   | Semana ISO do Ano de Encerramento. | 1-53
+--------------------------------------------------------------------------------------
+SEXO           | Int64      | Sexo (Consolidado) | 1: Feminino (F), 2: Masculino (M), 0: Ignorado (I)
+ESCOLARIDADE   | Int64      | Escolaridade consolidada (Codificada). | 0: Ignorado, 1: Analfabeto/Sem Escolaridade, 2: EF Incompleto, ..., 7: ES Completa
+GESTANTE       | Int64      | Status Gestacional Consolidado. | 1: Sim (Gestante), 2: Não/Não se Aplica, 0: Ignorado
+--------------------------------------------------------------------------------------
+CLASSIFICACAO_FIM| Int64    | Classificação Final Consolidada. | 0: Descartado/Ignorado/Outros, 1: Dengue, 2: Dengue c/ Alarme, 3: Dengue Grave
+EVOLUCAO_FIM   | Int64      | Evolução do Caso Consolidada. | 1: Cura, 2: Óbito (Qualquer causa), 0: Ignorado
+--------------------------------------------------------------------------------------
+CS_RACA        | Int64      | Raça/Cor (Mantido Original) | 1=Branca, 2=Preta, 3=Amarela, 4=Parda, 5=Indígena, 9=Ignorado
+UF             | Int64      | Código da Unidade Federativa (IBGE) | Códigos numéricos
+MUNICIPIO      | Int64      | Código do Município (IBGE) | Códigos numéricos
+TPAUTOCTO      | Int64      | Tipo de transmissão (Autóctone/Importado) | 1=Autóctone, 2=Importado, 3=Em investigação, 4=Ignorado
+CRITERIO       | Int64      | Critério de Confirmação | 1=Laboratorial, 2=Clínico-Epidemiológico, 3=Clínico, 4=Clínico-Imagem, 9=Ignorado
+--------------------------------------------------------------------------------------
+*COLUNAS SINTOMAS (Presumidas como Mantidas em Int64)*
+FEBRE          | Int64      | Febre | 1=Sim, 2=Não, 9=Ignorado
+MIALGIA        | Int64      | Mialgia (Dor Muscular) | 1=Sim, 2=Não, 9=Ignorado
+CEFALEIA       | Int64      | Cefaleia (Dor de Cabeça) | 1=Sim, 2=Não, 9=Ignorado
+EXANTEMA       | Int64      | Exantema (Erupção na pele) | 1=Sim, 2=Não, 9=Ignorado
+VOMITO         | Int64      | Vômito | 1=Sim, 2=Não, 9=Ignorado
+NAUSEA         | Int64      | Náusea | 1=Sim, 2=Não, 9=Ignorado
+PETEQUIA_N     | Int64      | Petéquias / Hemorragia | 1=Sim, 2=Não, 9=Ignorado
+DOR_COSTAS     | Int64      | Dor nas Costas | 1=Sim, 2=Não, 9=Ignorado
+CONJUNTVIT     | Int64      | Conjuntivite | 1=Sim, 2=Não, 9=Ignorado
+ARTRITE        | Int64      | Artrite (Inflamação nas articulações) | 1=Sim, 2=Não, 9=Ignorado
+ARTRALGIA      | Int64      | Artralgia (Dor nas articulações) | 1=Sim, 2=Não, 9=Ignorado
+LEUCOPENIA     | Int64      | Leucopenia (Exame laboratorial) | 1=Sim, 2=Não, 9=Ignorado
+LACO           | Int64      | Prova do Laço | 1=Positivo, 2=Negativo, 9=Ignorado
+DOR_RETRO      | Int64      | Dor retro-orbital | 1=Sim, 2=Não, 9=Ignorado
+HOSPITALIZ     | Int64      | Hospitalização | 1=Sim, 2=Não, 9=Ignorado
+============================================================

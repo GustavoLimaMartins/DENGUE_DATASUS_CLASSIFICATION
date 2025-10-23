@@ -1,0 +1,35 @@
+============================================================
+DICIONÁRIO DE DADOS - CÓDIGOS IBGE DAS CAPITAIS BRASILEIRAS
+(Ordenado pelo Código da UF)
+============================================================
+
+CAPITAL              | UF | CÓDIGO IBGE UF | CÓDIGO IBGE MUNICÍPIO
+---------------------|----|----------------|----------------------
+Porto Velho          | RO | 11             | 1100205
+Rio Branco           | AC | 12             | 1200401
+Manaus               | AM | 13             | 1302603
+Boa Vista            | RR | 14             | 1400100
+Belém                | PA | 15             | 1501402
+Macapá               | AP | 16             | 1600303
+Palmas               | TO | 17             | 1721008
+São Luís             | MA | 21             | 2111300
+Teresina             | PI | 22             | 2211001
+Fortaleza            | CE | 23             | 2304400
+Natal                | RN | 24             | 2408102
+João Pessoa          | PB | 25             | 2507507
+Recife               | PE | 26             | 2606800
+Maceió               | AL | 27             | 2704302
+Aracaju              | SE | 28             | 2800308
+Salvador             | BA | 29             | 2927408
+Belo Horizonte       | MG | 31             | 3106200
+Vitória              | ES | 32             | 3205309
+Rio de Janeiro       | RJ | 33             | 3304557
+São Paulo            | SP | 35             | 3550308
+Curitiba             | PR | 41             | 4106902
+Florianópolis        | SC | 42             | 4205407
+Porto Alegre         | RS | 43             | 4314902
+Campo Grande         | MS | 50             | 5002704
+Cuiabá               | MT | 51             | 5103403
+Goiânia              | GO | 52             | 5208707
+Brasília             | DF | 53             | 5300108
+============================================================
