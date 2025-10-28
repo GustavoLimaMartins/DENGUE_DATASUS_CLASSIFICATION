@@ -22,7 +22,9 @@ def analisarDadosViaGraficos():
         df_pl = dataframe()
         for column in df_pl.drop('CLASSIFICACAO_FIM').collect_schema().names():
             resultado_cruzado = (
-                df_pl.group_by(['CLASSIFICACAO_FIM', column])
+                df_pl
+                #.filter(pl.col('EVOLUCAO_FIM') == 2)
+                .group_by(['CLASSIFICACAO_FIM', column])
                 .agg(pl.len().alias("qtd_ocorrencias"))
                 .sort(['qtd_ocorrencias'], descending=True)
                 .limit(30)

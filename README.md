@@ -71,7 +71,19 @@ Este projeto implementa uma arquitetura **end-to-end** para análise e prediçã
 - **Motivo:** Corrige desbalanceamento entre classes (ex: casos graves são raros).
 - **Aplicação:** Apenas no conjunto de treino, evitando vazamento de dados.
 
-### 7️⃣ Modelagem: Machine Learning & Deep Learning
+### 7️⃣ Setup de Modelagem, Avaliação e Métricas
+**Arquivo:** `f_modeling_setup_and_evaluate.py`
+**Função:**
+  - Centraliza o contexto dos dados (treino/teste), aplica oversampling, configura e executa GridSearchCV, e realiza avaliação detalhada dos modelos.
+
+Fluxo:
+  - Inicializa o contexto dos dados, separando X_train, X_test, y_train, y_test.
+  - Configura GridSearchCV com scorer customizado (recall ponderado, priorizando casos graves).
+  - Avalia modelos com métricas robustas: relatório de classificação, matriz de confusão, curva ROC multiclasses.
+  - Calcula e plota Permutation Importance para todos os modelos e Feature Importance para modelos de árvore.
+  - Garante que a avaliação seja feita de forma padronizada e visual, facilitando a comparação entre algoritmos.
+
+### 8️⃣ Modelagem: Machine Learning & Deep Learning
 
 #### 🔹 Machine Learning
 
